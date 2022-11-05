@@ -1,0 +1,3 @@
+/*
+Temelinde Java ile aynı.
+*/
