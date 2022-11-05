@@ -3,7 +3,7 @@
 public class ShoppingBasket<T> implements Ibag<T> {
 	
 	private T[] bag;
-	private  final int MAXIMUM_CAPACÝTY=2000;
+	private  final int MAXIMUM_CAPACITY=2000;
 	private int bag_capacity=0;
 	public int numberOfItems;
 
@@ -25,11 +25,11 @@ public class ShoppingBasket<T> implements Ibag<T> {
 		return bag;
 	}
 	public boolean isFull() {
-		 return this.bag_capacity >= MAXIMUM_CAPACÝTY;}
+		 return this.bag_capacity >= MAXIMUM_CAPACITY;}
 
 	
 	public boolean add(T newItem) {
-		if (this.bag_capacity+((Item) newItem).getWeight()>MAXIMUM_CAPACÝTY) {
+		if (this.bag_capacity+((Item) newItem).getWeight()>MAXIMUM_CAPACITY) {
 			System.out.println("There is not enough space for "+((Item) newItem).getName()+" in basket!!");
 			return false;}
 		else{

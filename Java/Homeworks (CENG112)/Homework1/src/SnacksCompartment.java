@@ -1,7 +1,7 @@
 
 public class SnacksCompartment<T> implements Ibag<T>{
 	private T[] bag;
-	private static  int MAXIMUM_CAPACÝTY=2000;
+	private static  int MAXIMUM_CAPACITY=2000;
 	private int bag_capacity=0;
 	private int numberOfItems=0;
 	
@@ -17,7 +17,7 @@ public class SnacksCompartment<T> implements Ibag<T>{
 	
 	
 	public boolean add(T newItem) {
-		if (this.bag_capacity+((Item) newItem).getWeight()>MAXIMUM_CAPACÝTY) {
+		if (this.bag_capacity+((Item) newItem).getWeight()>MAXIMUM_CAPACITY) {
 			System.out.println("Snacks Compartment is full! You wasted "+((Item) newItem).getName()+"!!\n");
 			return false; 
 		}
@@ -39,7 +39,7 @@ public class SnacksCompartment<T> implements Ibag<T>{
 	}
 	
 	public boolean isFull() {
-		return this.bag_capacity == MAXIMUM_CAPACÝTY;}
+		return this.bag_capacity == MAXIMUM_CAPACITY;}
 
 	@Override
 	public T removeByIndex(int index) {
@@ -60,7 +60,7 @@ public class SnacksCompartment<T> implements Ibag<T>{
 
 	@Override
 	public void displayItems() {
-		int remain = MAXIMUM_CAPACÝTY-bag_capacity;
+		int remain = MAXIMUM_CAPACITY-bag_capacity;
 		System.out.println("Snacks:"+remain);
 	}
 
