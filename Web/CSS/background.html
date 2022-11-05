@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /*
+          arka plan renkleri için:
+        */
+
+        div p{
+            background-color: blue;
+        }
+
+        p{
+            background-color: blueviolet;
+        }
+        /*
+            saydamlık ayarlamak için:
+        */
+        div p{
+            background-color: aqua;
+            opacity: 0.4;
+        
+
+        }
+            /*
+          resim ekleme:  
+        */
+        body{
+            background-image: url("/ben.png");
+
+            /*
+            resimin tekrar edilmesini istemiyorsan :
+            */
+            background-repeat: no-repeat;
+            background-position: top right;
+            /*
+             500px boşluk ekleme:
+            */
+            margin-right: 500px;
+
+            /*
+            sayfanın kayması ile kaymasın diyorsan:
+            */
+            background-attachment: fixed;
+        }
+
+        #kayacak{
+            /*
+            bunlara gerek kalmadan, tek satırda da background ifade edilebilir:
+            */
+            background: #ff5588 bottom;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Buradaki h2 başlağının arkaplan rengi
+        "background-color: lightgreen;" ifadesi ile
+        ayarlanmıştır </h2>
+    <div>
+        Bu ifade "div" öğesi içinde yazılmıştır.
+        <p>Bu p paragrafı "div" öğesi içerisindedir ama
+        kendisine ait arkaplan rengi vardır.</p>
+        
+        Bu yazı paragrafın dışındadır ama "div" öğesinin
+        içerisindedir.
+    </div>
+    <p> Div dışında p</p>
+    <div id="lastDiv">
+        Arkaplandaki resim ön plandaki yazıları etkilemez.
+    </div>
+    <p id="kayacak">Kayacak yazı</p>
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+    <hr>
+    <p></p>
+</body>
+</html>

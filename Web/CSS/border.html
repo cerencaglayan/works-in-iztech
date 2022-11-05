@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        İçerik (content)- Metin ve resimlerin göründüğü kutunun esas içeriğidir.
+        Dolgu (paddings)- İçeriğin etrafındaki boşluktur. Dolgu şeffaftır yani renk atanamaz. İç boşluk olarak
+        adlandırılabilir.
+        Kenarlık (borders) – Padding dış kısmını saran çerçevedir. Buna renk ve çizgi tipi atanabilir.
+        Kenar Boşluğu (margins) – Çerçevenin Sınırın dışındaki şeffaf boşluktur. Renk verilemez. Dış boşluk olarak
+        adlandırılabilir.
+        */
+
+        /*
+        diğer border seçeneklerini ayarlayabilmek için border-style ı ilk olarak atamak önemli.(hatta gerekli.)
+        */
+
+
+        p.border1{
+            border-style: dashed;
+            border-bottom-style: dotted;
+            border-left-style: double;
+            border-width: 5px 10px;
+            /*
+             kenar yumuşatmak için:
+            */
+            border-radius: 50px;
+
+        }
+
+        p.border2{
+            border-style: groove;
+        }
+
+        p.border3{
+            border-style: outset;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p class="border1">1. Paragraf</p>
+    <p class="border2">2. Paragraf</p>
+    <p class="border3">3. Paragraf</p>
+
+</body>
+</html>

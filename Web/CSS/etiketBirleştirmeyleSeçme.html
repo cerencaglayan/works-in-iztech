@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*
+        *, Tüm etiketleri seçer.
+        */
+        *{
+           font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        /*
+        div p dersen div içindeki pler ; div,p dersen tüm div ve p etiketleri seçilir içindekiler de dahil olmak üzere.
+
+        */
+
+        div p{
+            color: aqua;
+            
+        }
+
+        /*
+        div>p divin altındaki pleri seçer
+        */
+
+        #div2 > p{
+            color: #8494;
+        }
+
+        /*
+        p ~ div {
+        p den sonra gelen aynı seviyedeki tüm div etketlerini seçer. Aynı seviyeyi görmek için
+            editörlerde girinti (tab) seviyesine bakılabilir. 
+
+
+            p + div  p den donraki aynı seviyede olan ilk divi arar.
+        */
+
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Başlık(div dışında)</h1>
+    <p>Div dışında paragraf.</p>
+    <div>
+        <h3>Başlık 1(div içinde)</h3>
+        <p id="1">Parapraf 1</p>
+        <p class = "para2" id="2">Paragraf 2</p>
+        <p>Paragraf 3</p>
+    </div>
+    <div id = "div2">
+        <h3>Başlık 1(div içinde)</h3>
+        <p id="1">Parapraf 1</p>
+        <p class = "para2" id="2">Paragraf 2</p>
+        <p>Paragraf 3</p>
+    </div>
+
+</body>
+</html>

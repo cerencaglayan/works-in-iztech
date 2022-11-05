@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    /*
+        p[title]
+        İçerisinde “title” parametresi bulunan p
+        etiketlerini seçecektir.
+
+        title="abo" diye belirtebilirsin.
+    */
+    p[title]{
+        color: blue;
+    }
+
+    /*
+        p[title~="iki"]
+
+        p paragrafı içinde bulunan title parmetresinin
+        içerisinde herhangi bir yerde “iki” ifadesi
+        geçiyorsa seçecektir. ~ işareti metnin içerisinde
+        herhangi bir konumu arayacaktır.
+
+
+        ^ başında
+        $ sonunda
+        
+    */
+
+    p[title~="ano"]{
+        color:blueviolet
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p id="ceren">Selam</p>
+        <p class="cero">Canım</p>
+        <p title="abo">Nasılsın</p>
+        <p title="ano">Haha</p>
+    </div>
+    
+</body>
+</html>

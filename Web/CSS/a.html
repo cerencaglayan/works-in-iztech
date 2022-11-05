@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /*
+Bir stilin içeriğinin kendisinden sonra gelecek bir başka daha güçlü bir stil tarafından bastırılması istenmez ise
+yanına !important yazılmalıdır. Bu durumda sonraki hiçbir sitil bunun etkisini iptal edemeyecektir. 
+
+        */
+        body {
+         background-color: lightblue !important;
+        }
+        h1 {
+         color: white;
+         text-align: center;
+        }
+        p {
+        font-family: verdana;
+         font-size: 20px;
+        }
+        #paragraf2{
+            color: #590;
+        }
+        p.class1{ 
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!--- classların p h1 belirtirsen sadece o gruptakileri değiştirirsin. p.class h1.class gibi.-->
+    <h1 class="class1">CSS Öğreniyorum</h1>
+    <p> inşallah yani</p>
+    <p id="paragraf2">2. paragraf,id sine göre yeşil bir rengi olacak.</p>
+    <p class="class1">Class için . ile seçim yapılır.</p>
+</body>
+</html>

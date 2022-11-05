@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        Borderın dışında, içeriği belli etmek için kullanılırlar.
+        Diğer içeriklerle örtüşebilirler.
+
+        borderdaki kuralların hepsi bunun için de geçerlidir.
+        */
+
+        .Orn1{
+            outline :  dotted red;
+        }
+
+
+        .Orn2{
+            outline: thick ridge pink; 
+            
+        }
+
+        .Orn3{
+            border: 5px dotted red;
+            outline: 2px dotted black;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="Orn1">dotted red (çizgili kırmızı) outline.</p>
+    <p class="Orn2">thick ridge pink (çıkıntılı pembe) outline.</p>
+    <p class="Orn3">thick (kalın) outline. Dikkat. İçinde border
+    vardır.</p>
+    
+</body>
+</html>
