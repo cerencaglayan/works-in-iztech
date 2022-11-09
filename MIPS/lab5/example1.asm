@@ -1,3 +1,7 @@
+.data
+
+    var: .space 20
+
 .text
 
 main:
