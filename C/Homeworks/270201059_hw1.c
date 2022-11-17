@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-//Ceren Çağlayan - 270201059
+// Ceren Çağlayan - 270201059
 typedef struct dynamic_array
 {
+
     int capacity;
     int size;
     void **elements;
@@ -70,7 +71,7 @@ void remove_element(dynamic_array *array, int position)
     array->elements[position] = NULL;
     array->size--;
 
-    if (array->size < (array->capacity / 2) )
+    if (array->size < (array->capacity / 2))
     {
         int new_capacity = (int)((array->capacity) / 2);
 
