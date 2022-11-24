@@ -1,4 +1,4 @@
-### THIRD HOMEWORK ASSIGNMENT OF DATA STRUCTURES
+### THIRD ASSIGNMENT OF DATA STRUCTURES
 
 * by [Ceren Çağlayan](https://github.com/cerencaglayan/) & [Elif Özyürek](https://github.com/elifozyurek/)
 
