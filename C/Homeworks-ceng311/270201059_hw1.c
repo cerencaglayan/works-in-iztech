@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Ceren Çağlayan - 270201059
+// Ceren Çağlayan - 270201059 80/100
 typedef struct dynamic_array
 {
 
