@@ -1,0 +1,20 @@
+WELCOME TO FRIENDLY MUHITTIN BOT:
+
+by @cerencaglayan
+
+ALL COMMANDS:
+--------------------------------------------------------------------------
+$hello :
+
+Returns "Hello" message to user.
+--------------------------------------------------------------------------
+
+$quote1 :
+
+It's a game for guessing a word from the quote that bot will display.
+--------------------------------------------------------------------------
+
+$quote2 :
+
+Bot returns a random quote for user.
+--------------------------------------------------------------------------
