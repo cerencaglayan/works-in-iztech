@@ -48,5 +48,5 @@ async def on_message(message):
 
 
 #myserver.start()
-client.run("MTA1NzM3NTI1NDg5ODU1MjkyMg.Gv7y-C.Z9KceQlNLaHYFtL8xBOmu9FkTpaOUFZqFPm2xs")
+client.run("MTA1NzM3NTI1NDg5ODU1MjkyMg.G9J4Gd.NgLXur0Z4JjKkkMa5kUXl1fopsUO7enCbxBkfQ")
 
