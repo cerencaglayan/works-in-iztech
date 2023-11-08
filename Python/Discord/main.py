@@ -48,5 +48,5 @@ async def on_message(message):
 
 
 #myserver.start()
-client.run("MTA1NzM3NTI1NDg5ODU1MjkyMg.G9J4Gd.NgLXur0Z4JjKkkMa5kUXl1fopsUO7enCbxBkfQ")
-
+client.run("token_name")
+#doesnt shown since security lol
