@@ -1,0 +1,31 @@
+% matlab basics
+
+% array tanımlama
+
+a = [1 2 3 4];
+
+
+% matrix tanımlama
+
+b = [1 2 3; 4 5 6; 7 8 9]
+
+% some functions for matrix creation:
+
+onesmatrix = ones(3, 4); % Creates a 3x4 matrix filled with ones.
+
+zerosmatrix = zeros(2, 2); % Creates a 2x2 matrix filled with zeros.
+
+randmatrix = rand(4,5); % Creates a 4x5 matrix filled with random values.
+
+%{
+ Array operations:
+For addition:
+
+a = a + 10
+sin(a)
+
+a' -> Transpose of matri
+
+%}
+
+a = a +10
