@@ -4,6 +4,7 @@
 *.exe
 *.ppt
 *.pptx
+MATLAB/slprj
 /.vscode
 /Python/Works/*
 
