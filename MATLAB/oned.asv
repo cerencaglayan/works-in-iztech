@@ -1,0 +1,17 @@
+% Define the Puma 560 robot model
+mdl_puma560
+
+initial_angles = [0, 90, 25, 0, 30, 20] * pi / 180;  % Convert to radians
+torque_vector = [1, 0, 0, 0, 0, 0.5];
+time_span = linspace(0, 10, 5);  % 5 different instances of time from 0 to 10
+joint_trajectory = jtraj(initial_angles, puma.fkine(initial_angles), time_span);
+
+% Initialize variables for storing end-effector positions
+end_effector_positions = zeros(3, length(time_span));
+
+% Simulate the robot and store end-effector positions
+for i = 1:length(time_span)
+    qd = puma.jacob0(joint_trajectory(i, :)) \ torque_vector';
+    joint_trajectory(i, :) = puma.ikine(joint_trajectory(i, :), qd);
+    end_effector_positions(:, i) = puma.fkine(joint_trajectory(i, :)).t;
+end
