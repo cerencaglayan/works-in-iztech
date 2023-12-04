@@ -1,4 +1,5 @@
-
+*.docx
+*.doc
 *.pdf
 *.exe
 *.ppt
