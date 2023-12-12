@@ -1,0 +1,65 @@
+[System]
+Name='ödev_week10'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=8
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='time'
+Range=[0 1]
+NumMFs=3
+MF1='slow':'gaussmf',[0.2124 0]
+MF2='average':'gaussmf',[0.2124 0.5]
+MF3='fast':'gaussmf',[0.2124 1]
+
+[Input2]
+Name='service'
+Range=[0 1]
+NumMFs=5
+MF1='poor':'gaussmf',[0.1062 0]
+MF2='average':'gaussmf',[0.1062 0.25]
+MF3='good':'gaussmf',[0.1062 0.5]
+MF4='excellent':'gaussmf',[0.1062 0.75]
+MF5='superb':'gaussmf',[0.1062 1]
+
+[Input3]
+Name='food'
+Range=[0 1]
+NumMFs=4
+MF1='rubbish':'gaussmf',[0.1416 0]
+MF2='average':'gaussmf',[0.1416 0.3333]
+MF3='delicious':'gaussmf',[0.1416 0.6667]
+MF4='elegant':'gaussmf',[0.1416 1]
+
+[Input4]
+Name='ambiance'
+Range=[0 1]
+NumMFs=4
+MF1='ordinary':'gaussmf',[0.1416 0]
+MF2='good':'gaussmf',[0.1416 0.3333]
+MF3='prime':'gaussmf',[0.1416 0.6667]
+MF4='exclusive':'gaussmf',[0.1416 1]
+
+[Output1]
+Name='tip'
+Range=[0 1]
+NumMFs=2
+MF1='low':'trimf',[-1 2.776e-17 1]
+MF2='high':'trimf',[0.002022 1.002 2.002]
+
+[Rules]
+1 1 1 1, 1 (1) : 2
+2 2 2 2, 1 (1) : 1
+3 5 4 4, 2 (1) : 2
+2 2 2 3, 2 (1) : 1
+2 2 3 2, 2 (1) : 1
+2 3 2 2, 2 (1) : 1
+3 2 2 2, 2 (1) : 1
+3 3 3 3, 2 (1) : 2

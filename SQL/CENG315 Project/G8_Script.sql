@@ -1576,7 +1576,7 @@ CREATE OR REPLACE TRIGGER AddTrigger1
                INSERT INTO holds
             values(:new.playlist_id, :new.song_id);
     END;
-/
+
 /*Trigger 2*/
 
 CREATE OR REPLACE TRIGGER DeleteTrigger1
@@ -1586,7 +1586,7 @@ CREATE OR REPLACE TRIGGER DeleteTrigger1
                DELETE FROM holds
             where playlist_id = :old.playlist_id;
     END;
-/
+
 /*Adds insert statements*/
 
 INSERT INTO ADDS(SONG_ID, PLAYLIST_ID) 
