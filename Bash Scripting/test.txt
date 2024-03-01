@@ -1,1 +1,0 @@
-[ gösterimli build-in test .
